@@ -112,6 +112,7 @@ figure {
 }
 
 img {
+    border-raius: 50%;
     border-style: none
 }
 
