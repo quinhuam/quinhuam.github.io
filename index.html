@@ -1,160 +1,239 @@
 <!DOCTYPE html>
-<html>
-<title>Hoja de Vida Juan Camareno</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://quinhuam.com/1656447263506.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h3>Juan Carlos Camareno Huamán</h3>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desarrollador Web</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ventanilla, PE</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>quinhuam@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+51968344203</p>                 
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Habilidades</b></p>
-          <p>Git - Github</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>HTML / CSS / Javascript </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
-              <div class="w3-center w3-text-white">70%</div>
-            </div>
-          </div>
-          <p>PHP / Laravel / Codeigniter</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-          </div>
-          <p>Rest Api / Soap</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-          </div>
-          <p>Visual Studio C# / VB Net</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>My SQL / SQL Server / Oracle</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Lenguajes</b></p>
-          <p>Inglés</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
-          </div>
-          <p>Español</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>          
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Camareno - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f26522;
+      --secondary: #0072ce;
+      --bg: #f4f4f4;
+      --text: #333;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+    }
+    .left-column, .right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .header {
+      text-align: center;
+    }
+    .header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    .title {
+      font-size: 2rem;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid var(--secondary);
+      padding-left: 0.5rem;
+      color: var(--secondary);
+    }
+    .section-content p {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .contact a {
+      color: var(--secondary);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div class="card header">
+        <img src="https://www.quinhuam.com/wp-content/uploads/2025/03/logaso.svg" alt="Logo Quinhuam" />
+        <div class="title">Juan Camareno</div>
+        <div class="subtitle">Analista Desarrollador | Líder Técnico</div>
+      </div>
+      <div class="card contact">
+        <div class="section-title">Contacto</div>
+        <a href="tel:+51968344203">📞 +51 968 344 203</a>
+        <a href="mailto:jchcamareno@gmail.com">✉️ camareno.juan@quinhuam.com</a>
+        <a href="https://www.linkedin.com/in/quinhuam">🔗 LinkedIn</a>
+        <a href="https://www.quinhuam.com/portafolio/">🌐 Portafolio</a>
+      </div>
+      <div class="card">
+        <div class="section-title">Idiomas</div>
+        <p>Español - Nativo</p>
+        <p>Inglés - Intermedio</p>
+        <p>Portugués, Coreano, Chino - Básico</p>
+      </div>
+      <div class="card">
+        <div class="section-title">Certificaciones</div>
+        <ul>
+          <li><strong>Prompt Engineering: Aprende a hablar con una IA generativa</strong> – LinkedIn Learning (2024, 1h 10min)</li>
+          <li><strong>Python esencial</strong> – LinkedIn Learning (2024, 2h 15min)</li>
+          <li><strong>Qué es la IA generativa</strong> – LinkedIn Learning (2024, 40min)</li>
+          <li><strong>Ética en la era de la IA generativa</strong> – LinkedIn Learning (2024, 55min)</li>
+          <li><strong>Diseña tu propio GPT: ChatGPT como tu empresa lo necesita</strong> – LinkedIn Learning (2024, 1h 35min)</li>
+          <li><strong>IA generativa para líderes empresariales</strong> – LinkedIn Learning (2024, 1h)</li>
+          <li><strong>Fundamentos profesionales de IA generativa</strong> – Microsoft (2024)</li>
+          <li><strong>Curso Profesional de Git y GitHub</strong> – Platzi (2023, 8h)</li>
+          <li><strong>Curso Profesional de Scrum</strong> – Platzi (2023, 6h)</li>
+          <li><strong>Curso Práctico de Frontend Developer</strong> – Platzi (2023, 10h)</li>
+          <li><strong>Curso de Svelte</strong> – Platzi (2023, 6h)</li>
+          <li><strong>Microsoft Office Specialist: Word 2000 / Word 2002 Expert</strong> – Microsoft (2004)</li>
+        </ul>
+        
+      </div>
+      <div class="card">
+        <div class="section-title">Habilidades Técnicas</div>
+        <ul>
+          <li><strong>Lenguajes:</strong> JavaScript, PHP, Python, C#, Java, VB.NET, SQL, HTML, CSS, TypeScript</li>
+          <li><strong>Frameworks:</strong> Laravel, Symfony, CodeIgniter, React Native, React, Vue, Angular, Svelte, Astro</li>
+          <li><strong>PeopleSoft Tools:</strong> PeopleCode, BI Publisher, Application Engine</li>
+          <li><strong>Bases de Datos:</strong> MySQL, SQL Server, Oracle, PostgreSQL, MongoDB, Redis, SQLLite</li>
+          <li><strong>ERP:</strong> Peoplesoft, Spring, Exactus, Odoo, Dolibarr, Weberp</li>
+          <li><strong>CMS:</strong> WordPress, Joomla, Drupal</li>
+          <li><strong>ECM:</strong> Alfresco, Sharepoint</li>
+          <li><strong>LMS:</strong> Moodle, Learndash, Learnpress, SenseiLMS</li>
+          <li><strong>CRM:</strong> Odoo, Perfex, Bitrix24</li>
+          <li><strong>Automatización:</strong> Zapier, Make, N8N, Power Automate</li>
+          <li><strong>APIs:</strong> REST, SOAP, MCP</li>
+          <li><strong>Sistemas Operativos:</strong> Linux, DOS, macOS, Windows</li>
+          <li><strong>Versionamiento:</strong> Git, GitHub</li>
+          <li><strong>Metodologías:</strong> Scrum, Kanban</li>
+          <li><strong>Aplicaciones y Herramientas:</strong> Jupiter, Collab, Bizagi, Powerbi, Locker, Excel avanzado, Visual Studio, Docker, Kubernetes</li>
+          <li><strong>Estándares:</strong> ITIL, TOGAF, ISO 27001, ISO 20000, , devOps, Iso 12207, Iso 25010, GDPR, COBIT 2019, PMI</li>
+          <li><strong>Herramientas:</strong> Make, N8N, Zapier, Power Apps, Power Automate, Napkin, Notebooklm, Framer, Figma, Webflow, Wix, Slack, Jira, Trello, Notion, Canva, Chatgpt Plus, Deepseek, Claude, Copilot</li>
+        </ul>
+        
+      </div>
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia Laboral</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Analista Desarrollador Web / Grupo Palomino</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Octubre 2021 - Agosto 2022</h6>
-          <p>- Mantenimiento del Sistema de Boletaje y Encomiendas</p>
-          <p>- Mantenimiento del Sistema de Almacen y Mantenimiento y Control de Vehiculos</p>
-          <p>- Resolución de incidencias de Facturación Electrónica</p>
-          <p>- Desarrollo de nuevo Sistema de Boletaje y Encomiendas en Web</p>
-          <p>- Administración de Base de Datos SQL Server</p>
-          <p>- Automatizacion del proceso de recuperación del ISC</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-            <h5 class="w3-opacity"><b>Analista Desarrollador / Proyectos Varios</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Enero 2021 - Octubre 2022</h6>
-            <p>- Sistema de Prorrateo de Servicios de Luz para condominios</p>
-            <p>- Intranet de Alumnos de Instituto Superior</p>                        
-            <p>- Implementación de Software CRM para distribuidora de importaciones</p>            
-            <hr>
-          </div>        
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Analista Desarrollador Web ASP .Net / Solera Tec</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Diciembre 2019 - Diciembre 2020</h6>
-          <p>Construcción de Restapi para Integraciones con Peoplesoft HRMS / FSCM</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Asistente de Sistemas / Redrilsa</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2018 - Noviembre 2019</h6>
-          <p>- Desarrollo de Aplicación de Agenda en Android </p>
-          <p>- Desarrollo de Sistema de Gestión de Requerimientos Visual Studio C# </p>
-          <br>
+    <div class="right-column">
+      <div class="card">
+        <div class="section-title">Experiencia Profesional</div>
+        <div class="section-content">
+          <p><strong>Promoviendo</strong> – Practicante (Ene 1996 - Mar 1996)</p>
+          <p>Digitación y apoyo administrativo. Uso de herramientas como Lotus, Wordperfect, Supercalc, Pascal.</p>
+          <p><strong>Computronic</strong> – Diseñador Gráfico (Ene 2000 - Dic 2000)</p>
+          <p>Diseño de material gráfico publicitario para ventas y promoción.</p>
+          <p><strong>IST Computronic Tech</strong> – Docente / Jefe de Prácticas (Feb 2000 - Dic 2007)</p>
+          <p>Docencia en programación, ofimática, internet, diseño web y gráfico. Gestión de prácticas formativas.</p>
+          <p><strong>Fast Food's Services SAC</strong> – Consultor de Sistemas (Abr 2006 - Actualidad)</p>
+          <p>Control de consumo, facturación y liquidación de comedores institucionales en ministerios y empresas privadas.</p>
+          <p><strong>Guigues Marketing</strong> – Multifunción (Dic 2006 - Mar 2007)</p>
+          <p>Diseño gráfico, mailing, diseño web para empresas del rubro gastronómico (Alfresco, Las Canastas, Segundo Muelle).</p>
+          <p><strong>Grupo SISE</strong> – Analista Desarrollador Web (Dic 2009 – Sep 2012)</p>
+          <p>ERP Académico, contenido en portal institucional, APIs con Symfony, bases de datos relacionales.</p>
+          <p><strong>Grupo Educa D / Instituto SISE</strong> – Jefe de Proyectos ERP (May 2012 - Sep 2015)</p>
+          <p>Gestión de proyectos ERP (Campus, FSCM, HRMS), soporte funcional y técnico, parametrización de nuevas unidades de negocio.</p>
+          <p>Application Engine, SQL/PLSQL, PeopleCode, desarrollo de personalizaciones, metodologías ágiles.</p>
+          <p><strong>Universidad Norbert Wiener</strong> – Analista de Sistemas (Ene 2016 - Ene 2018)</p>
+          <p>Gestión de incidencias ERP Spring, mantenimiento de sitio web, intranet educativa realizada en symfony y asp clasico, gestión de accesos y facturación electrónica.</p>
+          <p><strong>Imaging Perú</strong> – Analista Programador (Mayo 2018 - Junio 2018)</p>
+          <p>Desarrollo de apps móviles, Soporte a Software de Digitalización en Symfony, Personalización ALfresco.</p>
+          <p><strong>Redrilsa</strong> – Asistente de Sistemas (Jul 2018 - Nov 2019)</p>
+          <p>Desarrollo de apps móviles, soporte SAP B One, servicios REST/SOAP en C#, capacitación digital., mantenimiento de boletín digital en PHP</p>
+          <p><strong>Proyectos Varios</strong> – Analista Desarrollador (Ene 2021 - Oct 2022)</p>
+          <p>Intranet educativa Sise-ACM (PHP - Laravel), sistema de prorrateo-Condominios (PHP-Symfony) , CRM para importadoras PHP, software de farmacias PHP-Symfony, sitios web y módulos para empresas.</p>
+          <p><strong>Grupo Palomino</strong> – Analista Desarrollador Web (Oct 2021 - Ago 2022)</p>
+          <p>Mantenimiento y desarrollo de sistema de boletaje PHP-Laravel, encomiendas ASP Net, Vb Clásico, almacén VB Clásico, facturación electrónica APIs, base de datos SQL Server y automatización de procesos Zapier.</p>
+          <p><strong>SIMSA</strong> – Analista Peoplesoft (Ene 2023 - Nov 2023)</p>
+          <p>Mantenimiento de módulos AP, IN, PO y EX. Integración con software de facturación.</p>
+          <p><strong>RedBit Solutions</strong> – Coordinador de Proyectos de TI (Jun 2024 - Nov 2024)</p>
+          <p>ERP Exactus, incidencias de facturación electrónica, coordinación y proveedores TI, mantenimiento de desarrollo en ASP .Net.</p>
+          <p><strong>Quinhuam</strong> – CEO & Fullstack Developer (Nov 2023 - Actualidad)</p>
+          <p>Desarrollo de soluciones innovadoras para sectores logísticos, culturales ,educativos y otros.</p>
+          <p><strong>PeopleSoft Consultant (freelance)</strong> (2009 - Actualidad)</p>
+           <p><strong>Topitop (freelance)</strong> (2023 - Actualidad)</p>
+          <p>Desarrollo de pequeños proyectos en PHP - Symfony.</p>
+          <p>Implementaciones, mantenimientos, desarrollos con PHP, BI Publisher, integraciones.</p>
         </div>
       </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educación</h2>
-        <div class="w3-container">
-            <h5 class="w3-opacity"><b>Escuelas en Líneas</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2022</h6>
-            <p>Linkedin Learning - Cursos Varios de TI y Negocios</p>
-            <p>Crehana - Cursos diseño y Negocios</p>
-            <p>Platzi - Cursos de desarrollo web</p>
-            <hr>
-          </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Universidad Nacional Federico Villarreal</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2003 - 2008</h6>
-          <p>Bachiller en Ingeniería de Sistemas</p>
-          <hr>
+      <div class="card">
+        <div class="section-title">Proyectos Destacados</div>
+        <div class="section-content">
+          <p><strong>SmartQolqa</strong>: Lockers inteligentes solares con control por QR, aplicados a logística urbana.</p>
+          <p><strong>Mercado 13 de Julio</strong>: Plataforma comunitaria y de comercio para impulsar negocios locales.</p>
+          <p><strong>Desarrollo de Plugins y Plantillas para Wordpress en PHP</strong>: Plugins y Plantillas Elementor varios.</p>
+          <p><strong>Haravec & Cahuide</strong>: Proyectos culturales transmedia (poesía, IA, animación) con enfoque en el legado andino.</p>
+          <p><strong>Software SAAS</strong>: Sistema de Facturación Electrónica, Sistema de Farmacias, CRM, Software de Clinicas, Software de Granja de Cuyes .</p>
+          <p><strong>Investigación</strong>: Tesina en Cobit 2019 aplicado al area de Sistemas de una empresa de imprtaciones 2025 .</p>
+          <p><strong>Libro Blog</strong>: Libro sobre las experiencias profesionales y personales en Emprendimiento y Trabajando en entornos corporativos 2024</p>
+          <p><strong>Pre Incubación de Statup</strong>: Nuestra Startup Quinhuam School fue incubada por la Municipalidad de Lima</p>
+          
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Instituto de Educación Superior Computronic Tech </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1997 - 2000</h6>
-          <p>Titulado en Analista de Sistemas / Adminmistrador de Base de Datos y Operador de Sistemas</p>
-          <hr>
-        </div>        
       </div>
-
-    <!-- End Right Column -->
+      <div class="card">
+        <div class="section-title">Formación Académica</div>
+        <div class="section-content">
+          <p><strong>New Horizons 2019</strong></p>
+          <p>Certificaciones de Android Engineer (2019) 76 horas</p>
+          <p><strong>Universidad Nacional Federico Villarreal</strong></p>
+          <p>Curso de Titulación - Expedito (2010) 112 horas</p>
+          <p><strong>Universidad Nacional Federico Villarreal</strong></p>
+          <p>Bachiller en Ingeniería de Sistemas (2003 - 2008)</p>
+          <p><strong>Universidad Nacional Federico Villarreal</strong></p>
+          <p>Ciclo de Conferencias - Convergencia Técnologica 41 horas</p>
+          <p><strong>Instituto de Educación Superior Computronic Tech (2001)</strong></p>
+          <p>Título Técnico en Computación – Analista de Sistemas y Administración de Base de Datos (1997 - 2000)</p>
+          <p><strong>Instituto de Educación Superior Computronic Tech</strong></p>
+          <p>Operador de MicroComputadoras (2000)</p>
+          <p><strong>Instituto de Educación Superior Computronic Tech</strong></p>
+          <p>Manejador de Base de Datos (2000)</p>
+          <p><strong>Instituto de Educación Superior Computronic Tech</strong></p>
+          <p>Analista de Sistemas (2000)</p>
+          <p><strong>Universidad Nacional Mayor de San Marcos</strong></p>
+          <p>Estudios Generales - Ingeniería Electrónica (1994 - 1996)</p>
+           <p><strong>Microsoft</strong></p>
+          <p>Certificaciones oficiales Experto en Word 2000, 2002</p>
+        </div>
+      </div>
     </div>
-    
-  <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Encuentrame en social media.</p>    
-  <a href="https://www.linkedin.com/in/jchwin"><i class="fa fa-linkedin w3-hover-opacity"></i></a>  
-</footer>
-
+  <div style="text-align: center; margin-top: 2rem;">
+    <button onclick="window.print()" style="padding: 1rem 2rem; font-size: 1rem; background-color: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer;">
+      📄 Descargar CV en PDF
+    </button>
+  </div>
 </body>
 </html>
